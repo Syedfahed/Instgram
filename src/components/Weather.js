@@ -1,5 +1,5 @@
 /* https://api.weatherapi.com/v1/current.json?key=facd693514784127a83154058221407&q=Adilabad */
-import {React, useState} from 'react'
+import {React, useState,useEffect} from 'react'
 
 import Humidity from '../image/humidity.webp'
 import Pressure from '../image/pressure.webp'
@@ -21,6 +21,9 @@ const [data , setdata] = useState("")
      setdata(newdata)
      console.log(data)
  } 
+  useEffect(() => {
+  SearchData()
+ }, [])
   return (
     <>
     <div className='box'>
