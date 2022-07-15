@@ -36,7 +36,7 @@ const [data , setdata] = useState("")
                 <p>{data.region}</p><p>{data.country}</p>
             </div>
         <div className='weather-report'>
-            <h1>{data.temp_c}C</h1>
+            <h1>{data.temp_c}&#8451 C</h1>
             <img src={data.icon} alt=''/>
         </div> <p className='weather-text'>{data.text}</p>
         <div className='weather-components'>
