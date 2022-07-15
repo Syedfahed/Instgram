@@ -22,7 +22,7 @@ const [data , setdata] = useState("")
      console.log(data)
  } 
   useEffect(() => {
-  SearchData()
+  SearchData();
  }, [])
   return (
     <>
