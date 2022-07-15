@@ -6,7 +6,7 @@ import Pressure from '../image/pressure.webp'
 import Wind from '../image/wind.png'
 export default function Weather() {
 
-const  [Search, setSearch] = useState("")
+const  [Search, setSearch] = useState("Adilabad")
 const [data , setdata] = useState("")
  const SearchData = async ()=>{
      const url = `https://api.weatherapi.com/v1/current.json?key=facd693514784127a83154058221407&q=${Search}`
